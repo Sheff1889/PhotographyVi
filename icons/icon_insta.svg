@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
+	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
+	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
+	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
+	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
+]>
+<svg version="1.1" id="Ebene_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 31 31"
+	 style="enable-background:new 0 0 31 31;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#010202;}
+</style>
+<metadata>
+	<sfw  xmlns="&ns_sfw;">
+		<slices></slices>
+		<sliceSourceBounds  bottomLeftOrigin="true" height="30.3170013" width="30.3099995" x="282.8942871" y="-435.8901978">
+			</sliceSourceBounds>
+	</sfw>
+</metadata>
+<g>
+	<g id="Gruppe_166">
+		<path id="Pfad_4401" class="st0" d="M23.5595036,5.6274991c-1.0007401-0.0000019-1.8120041,0.8112564-1.8120041,1.8119965
+			s0.8112564,1.8120027,1.8119965,1.8120046S25.3715,8.4402437,25.3715,7.4395032c0-0.0003357,0-0.0006695,0-0.0010033
+			C25.3709507,6.4381509,24.5598545,5.627501,23.5595036,5.6274991"/>
+		<path id="Pfad_4402" class="st0" d="M15.5044994,7.7454991c-4.2818623-0.0027599-7.7552357,3.4661374-7.7579956,7.7479997
+			c-0.0027618,4.2818632,3.4661369,7.7552366,7.7480011,7.7579947c4.2818604,0.0027618,7.7552338-3.4661369,7.7579956-7.7479963
+			c0-0.0006676,0-0.0013313,0-0.0019989C23.2541561,11.2204161,19.7855816,7.7482591,15.5044994,7.7454991 M15.5044994,20.5305004
+			c-2.7790966,0.0022087-5.0337887-2.2489014-5.0359974-5.0279989c-0.0022087-2.7790947,2.2489033-5.0337887,5.027998-5.0359974
+			c2.7790985-0.0022087,5.0337906,2.2489033,5.0359993,5.027998c0,0.0023346,0,0.0046654,0,0.0069962
+			c-0.0022049,2.7761335-2.2518654,5.0262403-5.0279999,5.0289984"/>
+		<path id="Pfad_4403" class="st0" d="M22.3394985,0.3414993H8.6615c-4.5909061,0.0055114-8.3110409,3.7260942-8.316,8.3170004
+			v13.6829996c0.0049597,4.5912971,3.7257037,8.3120403,8.3170004,8.3170013h13.6769981
+			c4.5909061-0.0055122,8.3110409-3.7260952,8.316-8.3170013V8.6584997
+			C30.6505394,4.0675936,26.9304047,0.3470109,22.3394985,0.3414993 M27.9674988,22.3414993
+			c-0.0033073,3.107439-2.5215607,5.6256924-5.6289997,5.6289997H8.6615
+			c-3.1074405-0.0033073-5.6256933-2.5215588-5.6290007-5.6289997V8.6584997
+			C3.0363574,5.5514498,5.5544491,3.0338051,8.6615,3.0304992h13.6779985
+			c3.1074409,0.0033073,5.6256924,2.52156,5.6289997,5.6289997L27.9674988,22.3414993z"/>
+	</g>
+</g>
+</svg>
