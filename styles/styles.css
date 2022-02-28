@@ -9,7 +9,7 @@ body {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: "avantgarde", sans-serif;
+  font-family: "avantgarde", "poppins", sans-serif;
 }
 
 nav {
@@ -139,6 +139,10 @@ nav .menu-links {
 
 nav .menu-links li a {
   line-height: 1.5em;
+}
+
+nav .menu-links li a:hover {
+  color: #540103;
 }
 
 nav .nav-footer-links {
@@ -618,5 +622,66 @@ footer button {
   font-size: 1rem;
   margin: 0.5em 0 2em 0;
   font-weight: 200;
+}
+
+/* *****************publications***************** */
+.publications-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.publications-container .publications-text h1 {
+  font-size: 1rem;
+  margin: 4em 0 2em 0;
+}
+
+.publications-container .book-info h1 {
+  font-size: 1rem;
+  margin-top: 2em;
+}
+
+.publications-container .book-info ul {
+  margin-left: -2.5em;
+  margin-top: -0.6em;
+}
+
+.publications-container .book-info ul li {
+  list-style: none;
+}
+
+/* ********imprint ******* */
+.imprint-container {
+  width: 80%;
+  margin: 0 auto;
+  line-height: 1.5em;
+}
+
+/* privacy policy */
+.policy-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.policy-container h1 {
+  font-size: 1em;
+}
+
+.policy-container h2 {
+  font-size: 1em;
+}
+
+.policy-container ul li {
+  list-style: none;
+  margin-bottom: 1em;
+}
+
+/* contact */
+.contact-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.contact-container h1 {
+  font-size: 1em;
 }
 /*# sourceMappingURL=styles.css.map */

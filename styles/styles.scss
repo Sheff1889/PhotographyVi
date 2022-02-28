@@ -11,7 +11,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "avantgarde", sans-serif;
+  font-family: "avantgarde", "poppins", sans-serif;
 }
 
 nav {
@@ -120,6 +120,10 @@ nav {
 
     li a {
       line-height: 1.5em;
+
+      &:hover {
+        color: $secondary;
+      }
     }
   }
 
@@ -527,5 +531,71 @@ footer {
     font-size: 1rem;
     margin: 0.5em 0 2em 0;
     font-weight: 200;
+  }
+}
+
+/* *****************publications***************** */
+
+.publications-container {
+  width: 80%;
+  margin: 0 auto;
+
+  .publications-text {
+    h1 {
+      font-size: 1rem;
+      margin: 4em 0 2em 0;
+    }
+  }
+
+  .book-info {
+    h1 {
+      font-size: 1rem;
+      margin-top: 2em;
+    }
+
+    ul {
+      margin-left: -2.5em;
+      margin-top: -0.6em;
+      li {
+        list-style: none;
+      }
+    }
+  }
+}
+
+/* ********imprint ******* */
+
+.imprint-container {
+  width: 80%;
+  margin: 0 auto;
+  line-height: 1.5em;
+}
+
+/* privacy policy */
+
+.policy-container {
+  width: 80%;
+  margin: 0 auto;
+
+  h1 {
+    font-size: 1em;
+  }
+  h2 {
+    font-size: 1em;
+  }
+
+  ul li {
+    list-style: none;
+    margin-bottom: 1em;
+  }
+}
+
+/* contact */
+.contact-container {
+  width: 80%;
+  margin: 0 auto;
+
+  h1 {
+    font-size: 1em;
   }
 }
