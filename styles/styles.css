@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 @font-face {
-  font-family: garde;
-  src: url(fonts/AvantGardeGothic.otf);
+  font-family: avantgarde;
+  src: url(fonts/AvantGardeGothic);
 }
 
 body {
@@ -9,7 +9,7 @@ body {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: "garde", sans-serif;
+  font-family: "avantgarde", sans-serif;
 }
 
 nav {
@@ -227,16 +227,18 @@ img {
   opacity: 1;
   -webkit-transition: 0s 180s;
   transition: 0s 180s;
-}
-
-.flex-container .flex-column-one .flex-image-1 p {
-  position: absolute;
-  top: 0%;
-  left: 0%;
-  padding: 0.5em;
-  color: #fff;
-  z-index: -1;
-  font-size: 1.8em;
+  /* p {
+        &::before {
+          content: "hello";
+          top: 0%;
+          left: 0%;
+          padding: 0.5em;
+          color: rgb(110, 17, 17);
+          z-index: 3;
+          font-size: 1.8em;
+          margin-bottom: -3em;
+        }
+      } */
 }
 
 .flex-container .flex-column-one .flex-image-1 :hover {
@@ -245,14 +247,25 @@ img {
   transition: 0.1s;
 }
 
-.flex-container .flex-column-one .flex-image-2 {
+.flex-container .flex-column-one .flex-image-1 :hover::before {
+  content: "hello";
+  top: 0%;
+  left: 0%;
+  padding: 0.5em;
+  color: #6e1111;
+  z-index: 1;
+  font-size: 1.8em;
+  margin-bottom: -3em;
+}
+
+.flex-container .flex-image-2 {
   background-color: #2320de;
   width: 40%;
   z-index: -1;
   float: left;
 }
 
-.flex-container .flex-column-one .flex-image-2 p {
+.flex-container .flex-image-2 p {
   position: absolute;
   top: 0%;
   left: 0%;
@@ -262,7 +275,7 @@ img {
   font-size: 1.8em;
 }
 
-.flex-container .flex-column-one .flex-image-2 :hover {
+.flex-container .flex-image-2 :hover {
   opacity: 0;
   -webkit-transition: 0.1s;
   transition: 0.1s;
@@ -434,7 +447,9 @@ footer button {
 }
 
 .name-subject .page-subject {
-  font-size: 2.6rem;
+  width: 90%;
+  margin-top: 1em;
+  font-size: 2.25rem;
 }
 
 .about-container {
@@ -503,6 +518,7 @@ footer button {
 
 .works-container .image-container {
   max-width: 47%;
+  cursor: pointer;
 }
 
 .works-container .flex-image-7 img {
@@ -546,5 +562,61 @@ footer button {
   width: 80%;
   margin: 0 auto;
   font-size: 1.2rem;
+}
+
+/* still ok page */
+.ok-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.ok-container h1 {
+  font-size: 1rem;
+  margin: 0.5em 0 2em 0;
+  font-weight: 200;
+}
+
+/* helter skelter */
+.helter-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 88%;
+  margin: 0 auto;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.helter-container > div {
+  margin: 5.2px;
+  margin-bottom: 2em;
+}
+
+.helter-container .helter-image-container {
+  max-width: 47%;
+  margin-bottom: 1em;
+}
+
+.helter-container .helter-image-container h1 {
+  font-size: 1rem;
+}
+
+/* ask politely */
+.askpolitely-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.askpolitely-container h1 {
+  font-size: 1rem;
+  margin: 0.5em 0 2em 0;
+  font-weight: 200;
 }
 /*# sourceMappingURL=styles.css.map */
