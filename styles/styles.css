@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap");
 @font-face {
   font-family: avantgarde;
   src: url(fonts/AvantGardeGothic);
@@ -26,6 +26,19 @@ nav {
   margin: 1em 1.2em 0 0;
   /*  margin: 1.5em 5.5em 0 1.5em; */
   /* hamburger lines aniamtion */
+}
+
+nav .nav-seen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
 }
 
 nav .icons-image {
@@ -96,10 +109,11 @@ nav .nav-links {
 
 nav .nav-links .nav-links-header {
   position: absolute;
-  font-size: 0.6em;
+  font-size: 0.8em;
   top: 8%;
-  left: 8%;
+  left: 3%;
   color: #fff;
+  font-weight: 300;
   font-family: "Poppins", sans-serif;
 }
 
@@ -112,6 +126,7 @@ nav .nav-active {
           transform: translateX(0%);
   display: block;
   position: fixed;
+  margin: auto 0;
 }
 
 nav .nav-links li a {
@@ -121,18 +136,21 @@ nav .nav-links li a {
   font-weight: 200;
   line-height: 1.2em;
   float: left;
-  margin-left: 2em;
+  margin-left: 2.5em;
 }
 
 nav .menu-links {
-  display: inline-block;
+  /* display: inline-block; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   font-size: 1.5em;
   margin-top: 6.5em;
-  margin-left: -9em;
+  margin-left: -4em;
   text-decoration: none;
   list-style: none;
 }
@@ -310,8 +328,7 @@ footer .footer-header {
 
 footer .footer-header h1 {
   font-size: 2.5em;
-  font-weight: 200;
-  font-family: "garde", sans-serif;
+  font-weight: 300;
 }
 
 footer .double-arrow-desktop {
@@ -452,6 +469,7 @@ footer button {
 
 .name-subject .page-subject {
   width: 90%;
+  line-height: 1em;
   margin-top: 1em;
   font-size: 2.25rem;
 }
@@ -508,7 +526,7 @@ footer button {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 88%;
+  width: 86%;
   margin: 0 auto;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
@@ -516,7 +534,7 @@ footer button {
 }
 
 .works-container > div {
-  margin: 5.2px;
+  margin: 3.2px;
   margin-bottom: 2em;
 }
 
@@ -526,7 +544,7 @@ footer button {
 }
 
 .works-container .flex-image-7 img {
-  width: 200%;
+  width: 95%;
   height: 100%;
 }
 
@@ -565,7 +583,8 @@ footer button {
 .size-info {
   width: 80%;
   margin: 0 auto;
-  font-size: 1.2rem;
+  font-size: 1rem;
+  margin-top: 5em;
 }
 
 /* still ok page */
@@ -624,6 +643,67 @@ footer button {
   font-weight: 200;
 }
 
+/*  many ways */
+.manyways-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 88%;
+  margin: 0 auto;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.manyways-container > div {
+  margin: 5.2px;
+  margin-bottom: 2em;
+}
+
+.manyways-container .manyways-image-container {
+  max-width: 46%;
+  margin-bottom: 1em;
+}
+
+/* tumble */
+.tumble-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 88%;
+  margin: 0 auto;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.tumble-container > div {
+  margin: 5.2px;
+  margin-bottom: 2em;
+}
+
+.tumble-container .tumble-image-container {
+  max-width: 30%;
+  margin-bottom: 1em;
+}
+
+.tumble-container h1 {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
 /* *****************publications***************** */
 .publications-container {
   width: 80%;
@@ -653,13 +733,18 @@ footer button {
 .imprint-container {
   width: 80%;
   margin: 0 auto;
-  line-height: 1.5em;
+  float: left;
+  margin-left: 3em;
+  margin-bottom: 10em;
 }
 
 /* privacy policy */
 .policy-container {
   width: 80%;
   margin: 0 auto;
+  float: left;
+  margin-left: 3em;
+  margin-bottom: 10em;
 }
 
 .policy-container h1 {
@@ -679,9 +764,147 @@ footer button {
 .contact-container {
   width: 80%;
   margin: 0 auto;
+  float: left;
+  margin-left: 3em;
+  margin-bottom: 10em;
 }
 
 .contact-container h1 {
   font-size: 1em;
+}
+
+/* ***************** Media Queries *************** */
+@media screen and (min-width: 960px) {
+  .nav-menu .nav-seen {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    margin-right: 2em;
+  }
+  .nav-menu .menu-links li {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .nav-menu .nav-footer-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-right: 3em;
+    margin-top: 12em;
+  }
+  footer .footer-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer .footer-header .double-arrow-desktop {
+    display: block;
+    width: 50px;
+    margin-right: 5em;
+  }
+  footer .mail-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    width: 600px;
+  }
+  footer .mail-section button {
+    margin-left: 2em;
+    width: 160px;
+  }
+  footer .footer-end {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: -2em;
+  }
+  footer .footer-end .footer-end-links {
+    margin-right: 5em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    float: right;
+  }
+  footer .footer-end .footer-end-links a {
+    margin-left: 3em;
+  }
+  .arrow-up-mobile {
+    display: none;
+  }
+  /* works */
+  .works-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 95%;
+    margin: 0 auto;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+  .works-container > div {
+    margin: 5.2px;
+    margin-bottom: 2em;
+  }
+  .works-container .image-container {
+    max-width: 345px;
+    cursor: pointer;
+  }
+  .works-container .flex-image-7 {
+    width: 700px;
+    /* height: 100%; */
+  }
 }
 /*# sourceMappingURL=styles.css.map */
