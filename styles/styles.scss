@@ -278,7 +278,6 @@ footer {
   /* justify-content: left; */
   /* height: 50vh; */
   background-color: $primary;
-
   margin-top: 3em;
 
   .footer-header {
@@ -379,7 +378,7 @@ footer {
 .name-subject {
   display: flex;
   flex-direction: column;
-  margin: -3.3em 0 0 3em;
+  margin: -3.3em 0 0 2em;
   .name-header {
     font-family: "poppins", sans-serif;
     font-size: 1.1rem;
@@ -476,7 +475,7 @@ footer {
   align-items: baseline;
 
   & > div {
-    margin: 5.2px;
+    margin: 4px;
     margin-bottom: 2em;
   }
 
@@ -487,6 +486,7 @@ footer {
     h1 {
       font-size: 1rem;
       font-weight: 300;
+      margin-top: -0.1em;
     }
   }
 }
@@ -529,8 +529,15 @@ footer {
   width: 80%;
   margin: 0 auto;
   font-size: 1rem;
-  margin-top: 5em;
+  margin-top: -1.5em;
   margin-bottom: 10em;
+  margin-left: 2em;
+
+  h1 {
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 5rem;
+  }
 }
 
 /* still ok page */
@@ -539,10 +546,22 @@ footer {
   width: 80%;
   margin: 0 auto;
 
+  .ok-image-container {
+    margin-bottom: 1em;
+  }
+}
+
+.size-info-ok {
+  float: left;
+  margin-left: 2.5em;
+  margin-top: 0em;
+  font-weight: 300;
+  margin-bottom: 8em;
+
   h1 {
     font-size: 1rem;
-    margin: 0.5em 0 2em 0;
     font-weight: 300;
+    margin-bottom: 5rem;
   }
 }
 
@@ -557,7 +576,7 @@ footer {
   align-items: baseline;
 
   & > div {
-    margin: 5.2px;
+    margin: 3.2px;
     margin-bottom: 2em;
   }
 
@@ -578,6 +597,7 @@ footer {
   font-size: 1rem;
   margin-top: 5em;
   margin-bottom: 10em;
+  margin-left: 1.5em;
 }
 /* ask politely */
 
@@ -588,8 +608,17 @@ footer {
   h1 {
     font-size: 1rem;
     margin: 0.5em 0 2em 0;
-    font-weight: 200;
+    font-weight: 300;
   }
+}
+
+.size-info-askpolitely {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 1rem;
+  margin-top: 5em;
+  margin-bottom: 10em;
+  margin-left: 2em;
 }
 
 /*  many ways */
@@ -610,6 +639,61 @@ footer {
   .manyways-image-container {
     max-width: 46%;
     margin-bottom: 1em;
+  }
+
+  h1 {
+    font-size: 1rem;
+    font-weight: 300;
+    margin-top: -2em;
+    margin-bottom: 5rem;
+  }
+}
+.size-info-manyways {
+  float: left;
+  margin-left: 2.1em;
+  margin-top: -1.8em;
+  font-weight: 300;
+}
+
+/* madame */
+
+.madame-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  float: left;
+
+  width: 92%;
+  margin: 0 auto;
+  margin-left: 3em;
+  align-items: baseline;
+
+  & > div {
+    margin: 5.2px;
+    margin-bottom: 2em;
+  }
+
+  .madame-image-container {
+    width: 27%;
+    margin-bottom: 1em;
+  }
+
+  h1 {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+}
+
+.size-info-madame {
+  float: left;
+  margin-left: 3.3em;
+  margin-top: -1.8em;
+  font-weight: 300;
+
+  h1 {
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 5rem;
   }
 }
 
@@ -644,9 +728,15 @@ footer {
 
 .size-info-tumble {
   float: left;
-  margin-left: 3em;
-  margin-top: 5em;
+  margin-left: 3.3em;
+  margin-top: -1.8em;
   font-weight: 300;
+
+  h1 {
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 5rem;
+  }
 }
 
 /* ************* exhibitions ******************** */
@@ -719,9 +809,11 @@ footer {
   float: left;
   margin-left: 3em;
   margin-bottom: 10em;
+  z-index: -2;
 
   h1 {
     font-size: 1em;
+    margin-bottom: -1em;
   }
 }
 
@@ -733,7 +825,7 @@ footer {
   .section-text {
     margin-top: -4em;
     h1 {
-      font-size: 4.5rem;
+      font-size: 5.8rem;
     }
   }
 
@@ -752,13 +844,14 @@ footer {
       margin-top: 5em;
       text-decoration: none;
       list-style: none;
-      font-size: 2rem;
+      font-size: 2.5rem;
+
       .menu-links li {
         display: flex;
 
         margin-left: auto;
         margin-right: auto;
-        font-size: 2.5rem;
+        line-height: 1.5em;
 
         .menu-links li a {
           font-size: 2.5rem;
@@ -889,6 +982,44 @@ footer {
     align-items: baseline;
   }
 
+  /* manyways */
+
+  .manyways-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 60%;
+    margin: 0 auto;
+    align-items: baseline;
+
+    & > div {
+      margin: 4px;
+      margin-bottom: 2em;
+    }
+
+    .manyways-image-container {
+      max-width: 47%;
+      margin-bottom: 1em;
+
+      h1 {
+        font-size: 1rem;
+        font-weight: 300;
+        margin-top: -0.1em;
+      }
+    }
+  }
+
+  .size-info-manyways {
+    float: left;
+    margin-left: 3.3em;
+    margin-top: -1.8em;
+    font-weight: 300;
+
+    h1 {
+      margin-left: 10em;
+    }
+  }
+
   /*  ffm */
 
   .ffm-container {
@@ -907,9 +1038,15 @@ footer {
 
   .size-info-ffm {
     float: left;
-    margin-left: 3em;
-    margin-top: 5em;
+    margin-left: 2.4em;
+    margin-top: em;
     font-weight: 300;
+    margin-left: 4em;
+    h1 {
+      font-size: 1rem;
+      font-weight: 300;
+      margin-bottom: 5rem;
+    }
   }
 
   /* helter */
@@ -951,9 +1088,26 @@ footer {
 
   .size-info-ok {
     float: left;
-    margin-left: 3em;
-    margin-top: 5em;
+    margin-left: 3.5em;
+    margin-top: 0em;
     font-weight: 300;
+  }
+
+  /* madame */
+
+  .madame-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+    align-items: baseline;
+    margin-left: 2em;
+
+    .madame-image-container {
+      max-width: 24%;
+      margin-bottom: 1em;
+    }
   }
 
   /* tumble */
@@ -973,8 +1127,8 @@ footer {
 
   .size-info-tumble {
     float: left;
-    margin-left: 3em;
-    margin-top: 5em;
+    margin-left: 3.3em;
+    margin-top: em;
     font-weight: 300;
   }
 
