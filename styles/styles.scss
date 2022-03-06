@@ -32,10 +32,16 @@ nav {
   .icons-image {
     display: flex;
     flex-direction: row;
+    align-items: baseline;
 
     .icon-nav {
       width: 30px;
       margin-left: 1em;
+      cursor: pointer;
+
+      /* img a {
+        cursor: pointer;
+      } */
     }
   }
 
@@ -283,7 +289,9 @@ footer {
   .footer-header {
     /* display: block; */
     margin-left: 3em;
-    color: #fff;
+
+    /*  */
+    color: $primary;
 
     h1 {
       font-size: 2.5em;
@@ -305,22 +313,23 @@ footer {
       height: 2em;
       background-color: #de8020;
       border-style: none none solid none;
-      border-color: white;
+      border-color: $primary;
       margin-bottom: 2em;
 
       &::placeholder {
-        color: #ffffff;
+        color: $primary;
       }
     }
   }
 
   button {
-    border-color: #fff;
+    /*  */
+    border-color: $primary;
     background-color: #de8020;
     width: 50%;
     padding: 0.8em 3em;
     /*  padding: 0.4em 1.6em; */
-    color: #fff;
+    color: $primary;
     font-size: 0.9em;
     border-style: solid;
     margin-bottom: 5em;
@@ -438,6 +447,91 @@ footer {
   }
 }
 
+/* ********************* ***************  index main card flip  ************** ********************************* */
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 400px;
+  /* border: 1px solid #f1f1f1; */
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 200px;
+    height: 400px;
+    /* text-align: center; */
+    transition: transform 0.01s;
+    transform-style: preserve-3d;
+
+    .tumble-image {
+      margin-left: 11.5em;
+      margin-top: -2.5em;
+      width: 160px;
+      height: 350px;
+    }
+
+    .tumble-back {
+      margin-left: -9em;
+      margin-top: -2.5em;
+      width: 160px;
+      height: 199px;
+    }
+
+    .colour-image {
+      margin-top: -12em;
+      margin-left: 2em;
+    }
+
+    .colour-back {
+      margin-top: -12em;
+      margin-left: -2em;
+      width: 200px;
+      height: 279px;
+    }
+  }
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  /* background-color: #bbb;
+  color: black; */
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  width: 100%;
+  height: 100%;
+  transform: rotateY(180deg);
+  overflow: hidden;
+
+  h1 {
+    font-size: 1.6rem;
+    margin-left: 0.5em;
+
+    font-weight: 300;
+    line-height: 1em;
+  }
+}
+
 /* works page  */
 
 .works-container {
@@ -456,6 +550,10 @@ footer {
   .image-container {
     max-width: 47%;
     cursor: pointer;
+
+    img:hover {
+      -webkit-filter: brightness(120%);
+    }
   }
 
   .flex-image-7 img {

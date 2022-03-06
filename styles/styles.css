@@ -49,11 +49,18 @@ nav .icons-image {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
 nav .icons-image .icon-nav {
   width: 30px;
   margin-left: 1em;
+  cursor: pointer;
+  /* img a {
+        cursor: pointer;
+      } */
 }
 
 nav .hamburger {
@@ -326,7 +333,8 @@ footer {
 footer .footer-header {
   /* display: block; */
   margin-left: 3em;
-  color: #fff;
+  /*  */
+  color: #de8020;
 }
 
 footer .footer-header h1 {
@@ -354,33 +362,34 @@ footer .mail-section input {
   height: 2em;
   background-color: #de8020;
   border-style: none none solid none;
-  border-color: white;
+  border-color: #de8020;
   margin-bottom: 2em;
 }
 
 footer .mail-section input::-webkit-input-placeholder {
-  color: #ffffff;
+  color: #de8020;
 }
 
 footer .mail-section input:-ms-input-placeholder {
-  color: #ffffff;
+  color: #de8020;
 }
 
 footer .mail-section input::-ms-input-placeholder {
-  color: #ffffff;
+  color: #de8020;
 }
 
 footer .mail-section input::placeholder {
-  color: #ffffff;
+  color: #de8020;
 }
 
 footer button {
-  border-color: #fff;
+  /*  */
+  border-color: #de8020;
   background-color: #de8020;
   width: 50%;
   padding: 0.8em 3em;
   /*  padding: 0.4em 1.6em; */
-  color: #fff;
+  color: #de8020;
   font-size: 0.9em;
   border-style: solid;
   margin-bottom: 5em;
@@ -521,6 +530,99 @@ footer button {
   font-size: 1.108rem;
 }
 
+/* ********************* ***************  index main card flip  ************** ********************************* */
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 400px;
+  /* border: 1px solid #f1f1f1; */
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  /* Remove this if you don't want the 3D effect */
+  /* This container is needed to position the front and back side */
+}
+
+.flip-card .flip-card-inner {
+  position: relative;
+  width: 200px;
+  height: 400px;
+  /* text-align: center; */
+  -webkit-transition: -webkit-transform 0.01s;
+  transition: -webkit-transform 0.01s;
+  transition: transform 0.01s;
+  transition: transform 0.01s, -webkit-transform 0.01s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.flip-card .flip-card-inner .tumble-image {
+  margin-left: 11.5em;
+  margin-top: -2.5em;
+  width: 160px;
+  height: 350px;
+}
+
+.flip-card .flip-card-inner .tumble-back {
+  margin-left: -9em;
+  margin-top: -2.5em;
+  width: 160px;
+  height: 199px;
+}
+
+.flip-card .flip-card-inner .colour-image {
+  margin-top: -12em;
+  margin-left: 2em;
+}
+
+.flip-card .flip-card-inner .colour-back {
+  margin-top: -12em;
+  margin-left: -2em;
+  width: 200px;
+  height: 279px;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  /* background-color: #bbb;
+  color: black; */
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  overflow: hidden;
+}
+
+.flip-card-back h1 {
+  font-size: 1.6rem;
+  margin-left: 0.5em;
+  font-weight: 300;
+  line-height: 1em;
+}
+
 /* works page  */
 .works-container {
   display: -webkit-box;
@@ -547,6 +649,10 @@ footer button {
 .works-container .image-container {
   max-width: 47%;
   cursor: pointer;
+}
+
+.works-container .image-container img:hover {
+  -webkit-filter: brightness(120%);
 }
 
 .works-container .flex-image-7 img {
