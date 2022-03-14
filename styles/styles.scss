@@ -388,6 +388,7 @@ footer {
   display: flex;
   flex-direction: column;
   margin: -3.3em 0 0 2em;
+  font-weight: 300;
   .name-header {
     font-family: "poppins", sans-serif;
     font-size: 1.1rem;
@@ -1209,6 +1210,14 @@ main {
 @media screen and (min-width: 960px) {
   /* ***********index. html************** */
 
+  .name-subject {
+    .page-subject {
+      font-size: 3rem;
+      margin-top: 0.8em;
+      font-weight: 300;
+    }
+  }
+
   .section-text {
     margin-top: -4em;
     margin-left: 4em !important;
@@ -1571,18 +1580,12 @@ main {
   .contact-wrap {
     float: left;
     position: relative;
-    left: 50%;
+    left: 46%;
+    width: 30%;
+    margin-bottom: 20em !important;
 
     .contact-container {
-      float: left;
-      position: relative;
-      left: -50%;
-    }
-    p {
-      a {
-        cursor: pointer !important;
-        font-size: 0.9rem;
-      }
+      margin: 0 auto;
     }
   }
 
@@ -1590,7 +1593,9 @@ main {
   .imprint-wrap {
     float: left;
     position: relative;
-    left: 50%;
+    left: 45%;
+    width: 60%;
+    margin-bottom: 20em !important;
 
     .imprint-container {
       margin: 0 auto;
@@ -1603,6 +1608,15 @@ main {
       cursor: pointer !important;
       font-size: 1rem;
     }
+  }
+
+  /* **********private policy **************** */
+
+  .policy-container {
+    float: left;
+    position: relative;
+    left: 30%;
+    width: 50%;
   }
 
   /* h1 in back flip cards */
@@ -1771,6 +1785,14 @@ main {
 }
 
 @media screen and (min-width: 1324px) {
+  .size-info-tumble {
+    margin-top: -26.5em;
+  }
+
+  .size-info-manyways {
+    margin-top: -50.5em;
+  }
+
   .section-text {
     /* width: 80%;
     margin: auto 0s; */
