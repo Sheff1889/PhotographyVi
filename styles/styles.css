@@ -112,6 +112,7 @@ nav .nav-links {
   transition: transform 0.5s ease-in;
   transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
   display: none;
+  z-index: 1 !important;
 }
 
 nav .nav-links .nav-links-header {
@@ -193,6 +194,7 @@ nav .nav-footer-links a {
 
 /* section index  */
 .section-text {
+  margin-top: -1em !important;
   width: 85%;
   margin: 0 auto;
 }
@@ -531,8 +533,12 @@ footer button {
 }
 
 /* ********************* ***************  index main card flip  ************** ********************************* */
-/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
-.flip-card {
+main {
+  margin-bottom: 1em;
+  /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+}
+
+main .flip-card {
   background-color: transparent;
   width: 300px;
   height: 400px;
@@ -543,7 +549,7 @@ footer button {
   /* This container is needed to position the front and back side */
 }
 
-.flip-card .flip-card-inner {
+main .flip-card .flip-card-inner {
   position: relative;
   width: 200px;
   height: 400px;
@@ -556,131 +562,140 @@ footer button {
           transform-style: preserve-3d;
 }
 
-.flip-card .flip-card-inner .tumble-image {
+main .flip-card .flip-card-inner .tumble-image {
   margin-left: 11.5em;
   margin-top: -2.5em;
   width: 160px;
   height: 350px;
 }
 
-.flip-card .flip-card-inner .tumble-back {
+main .flip-card .flip-card-inner .tumble-back {
   margin-left: -9em;
   margin-top: -2.5em;
   width: 160px;
   height: 199px;
-  background-color: #e6e6e6;
+  background-color: #90a9af;
 }
 
-.flip-card .flip-card-inner .colour-image {
+main .flip-card .flip-card-inner .colour-image {
   margin-top: -12em;
   margin-left: 2em;
 }
 
-.flip-card .flip-card-inner .colour-back {
+main .flip-card .flip-card-inner .colour-back {
   margin-top: -12em;
   margin-left: -2em;
   width: 200px;
   height: 279px;
+  background-color: #da4b2b;
 }
 
-.flip-card .flip-card-inner .stillok-image {
+main .flip-card .flip-card-inner .stillok-image {
   margin-top: -15em;
   margin-left: 11em;
 }
 
-.flip-card .flip-card-inner .stillok-back {
+main .flip-card .flip-card-inner .stillok-back {
   margin-top: -15em;
   margin-left: -11em;
   width: 100%;
   height: 217px;
+  background-color: #c77f2e;
 }
 
-.flip-card .flip-card-inner .manyways-image {
+main .flip-card .flip-card-inner .manyways-image {
   margin-top: -22em;
   margin-left: 2em;
 }
 
-.flip-card .flip-card-inner .manyways-back {
+main .flip-card .flip-card-inner .manyways-back {
   margin-top: -22em;
   margin-left: -2em;
   width: 100%;
   height: 280px;
+  background-color: #c87f2d;
 }
 
-.flip-card .flip-card-inner .askpolitely-image {
+main .flip-card .flip-card-inner .askpolitely-image {
   margin-top: -25em;
   margin-left: 7em;
 }
 
-.flip-card .flip-card-inner .askpolitely-back {
+main .flip-card .flip-card-inner .askpolitely-back {
   margin-top: -25em;
   margin-left: -7em;
   width: 200px;
   height: 280px;
+  background-color: #1b1c31;
 }
 
-.flip-card .flip-card-inner .ffm-image {
+main .flip-card .flip-card-inner .ffm-image {
   margin-top: -28em;
   margin-left: 0em;
 }
 
-.flip-card .flip-card-inner .ffm-back {
+main .flip-card .flip-card-inner .ffm-back {
   margin-top: -28em;
   margin-left: -0em;
   width: 200px;
   height: 280px;
+  background-color: #699bb7;
 }
 
-.flip-card .flip-card-inner .iwonder-image {
+main .flip-card .flip-card-inner .iwonder-image {
   margin-top: -32em;
   margin-left: 6em;
   width: 250px;
 }
 
-.flip-card .flip-card-inner .iwonder-back {
+main .flip-card .flip-card-inner .iwonder-back {
   margin-top: -32em;
   margin-left: -9em;
   width: 250px;
   height: 166px;
+  background-color: #dacbc9;
 }
 
-.flip-card .flip-card-inner .lewisbook-image {
+main .flip-card .flip-card-inner .lewisbook-image {
   margin-top: -42em;
   margin-left: 2em;
   width: 120px;
 }
 
-.flip-card .flip-card-inner .lewisbook-back {
+main .flip-card .flip-card-inner .lewisbook-back {
   margin-top: -42em;
   margin-left: 3em;
   width: 120px;
   height: 160px;
+  background-color: #315152;
 }
 
-.flip-card .flip-card-inner .ilikeuniform-image {
+main .flip-card .flip-card-inner .ilikeuniform-image {
   margin-top: -69em;
   margin-left: 12em;
   width: 160px;
 }
 
-.flip-card .flip-card-inner .ilikeuniform-back {
+main .flip-card .flip-card-inner .ilikeuniform-back {
   margin-top: -69em;
   margin-left: -9.5em;
   width: 160px;
   height: 224px;
+  background-color: #f7f04b;
 }
 
-.flip-card .flip-card-inner .helter-image {
+main .flip-card .flip-card-inner .helter-image {
   margin-top: -77em;
   margin-left: 0em;
   width: 160px;
 }
 
-.flip-card .flip-card-inner .helter-back {
+main .flip-card .flip-card-inner .helter-back {
   margin-top: -77em;
   margin-left: 2.5em;
   width: 160px;
   height: 213.3px;
+  background-color: #48000b;
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
@@ -718,7 +733,7 @@ footer button {
 }
 
 .flip-card-back h1 {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   margin-left: 0.5em;
   font-weight: 300;
   line-height: 1em;
@@ -1148,8 +1163,39 @@ footer button {
   margin-bottom: -1em;
 }
 
+.contact-container a {
+  cursor: pointer;
+}
+
+/* imprint */
+.imprint-container {
+  width: 80%;
+  margin: 0 auto;
+  float: left;
+  margin-left: 3em;
+  margin-bottom: 10em;
+  z-index: -2;
+}
+
+.imprint-container h1 {
+  font-size: 1em;
+  margin-bottom: -1em;
+}
+
+.imprint-container a {
+  cursor: pointer;
+}
+
 /* ***************** Media Queries ************************************************************************************************ */
 @media screen and (min-width: 740px) {
+  .section-text {
+    width: 80%;
+    /* margin-left: 4em; */
+    margin-top: -2em !important;
+  }
+  .section-text h1 {
+    font-size: 3rem;
+  }
   .tumble-image {
     margin-left: 28.5em !important;
     margin-top: -5.5em !important;
@@ -1277,9 +1323,10 @@ footer button {
   /* ***********index. html************** */
   .section-text {
     margin-top: -4em;
+    margin-left: 4em !important;
   }
   .section-text h1 {
-    font-size: 5.8rem;
+    font-size: 3.5rem !important;
   }
   /* nav menu */
   .nav-menu .nav-seen {
@@ -1702,6 +1749,430 @@ footer button {
     float: left;
     position: relative;
     left: -50%;
+  }
+  .contact-wrap p a {
+    cursor: pointer !important;
+    font-size: 0.9rem;
+  }
+  /* imprint */
+  .imprint-wrap {
+    float: left;
+    position: relative;
+    left: 50%;
+  }
+  .imprint-wrap .imprint-container {
+    margin: 0 auto;
+    /* float: left;
+      position: relative;
+      left: -50%; */
+  }
+  .imprint-wrap a {
+    cursor: pointer !important;
+    font-size: 1rem;
+  }
+  /* h1 in back flip cards */
+  .flip-card-back h1 {
+    font-size: 2.5rem !important;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .flip-card-back h1 {
+    font-size: 3.2rem !important;
+  }
+  .section-text h1 {
+    font-size: 4.9em;
+    line-height: 1.1em;
+  }
+  .tumble-image {
+    margin-left: 38.5em !important;
+    margin-top: -5.5em !important;
+    width: 360px !important;
+    height: 450px !important;
+  }
+  .tumble-back {
+    margin-left: -48.5em !important;
+    margin-top: -5.5em !important;
+    width: 360px !important;
+    height: 450px !important;
+    background-color: #e6e6e6;
+  }
+  .colour-image {
+    margin-left: 4em !important;
+    margin-top: -14.5em !important;
+    width: 390px !important;
+    height: 324px !important;
+  }
+  .colour-back {
+    margin-top: -14.5em !important;
+    margin-left: -15.8em !important;
+    width: 390px !important;
+    height: 546px !important;
+  }
+  .stillok-image {
+    margin-top: -22em !important;
+    margin-left: 38.5em !important;
+    width: 410px !important;
+    height: 363px !important;
+  }
+  .stillok-back {
+    margin-top: -22em !important;
+    margin-left: -51.5em !important;
+    width: 410px !important;
+    height: 447px !important;
+  }
+  .manyways-image {
+    margin-top: -22em !important;
+    margin-left: 10em !important;
+    width: 340px !important;
+    height: 447px !important;
+  }
+  .manyways-back {
+    margin-top: -22em !important;
+    margin-left: -18.8em !important;
+    width: 340px !important;
+    height: 476px !important;
+  }
+  .askpolitely-image {
+    margin-top: -32em !important;
+    margin-left: 37em !important;
+    width: 380px !important;
+    height: 364px !important;
+  }
+  .askpolitely-back {
+    margin-top: -32em !important;
+    margin-left: -48.2em !important;
+    width: 380px !important;
+    height: 532px !important;
+  }
+  .ffm-image {
+    margin-top: -28em !important;
+    margin-left: 0em !important;
+    width: 400px !important;
+    height: 392px !important;
+  }
+  .ffm-back {
+    margin-top: -28em !important;
+    margin-left: -12.5em !important;
+    width: 400px !important;
+    height: 553px !important;
+  }
+  .iwonder-image {
+    margin-top: -42em !important;
+    margin-left: 32.5em !important;
+    width: 470px !important;
+    height: 443px !important;
+  }
+  .iwonder-back {
+    margin-top: -42em !important;
+    margin-left: -49.5em !important;
+    width: 470px !important;
+    height: 313px !important;
+  }
+  .lewisbook-image {
+    margin-top: -29em !important;
+    margin-left: 9em !important;
+    width: 260px !important;
+    height: 240px !important;
+  }
+  .lewisbook-back {
+    margin-top: -29em !important;
+    margin-left: -13em !important;
+    width: 260px !important;
+    height: 346.6px !important;
+  }
+  .ilikeuniform-image {
+    margin-top: -60em !important;
+    margin-left: 37.5em !important;
+    width: 380px !important;
+    height: 532px !important;
+  }
+  .ilikeuniform-back {
+    margin-top: -60em !important;
+    margin-left: -48.8em !important;
+    width: 380px !important;
+    height: 532px !important;
+  }
+  .helter-image {
+    margin-top: -44em !important;
+    margin-left: 3em !important;
+    width: 450px !important;
+    height: 448px !important;
+  }
+  .helter-back {
+    margin-top: -44em !important;
+    margin-left: -18.6em !important;
+    width: 450px !important;
+    height: 600px !important;
+  }
+}
+
+@media screen and (min-width: 1324px) {
+  .section-text {
+    /* width: 80%;
+    margin: auto 0s; */
+  }
+  .section-text h1 {
+    font-size: 4rem !important;
+    line-height: 1.1em;
+  }
+  main {
+    margin-bottom: 25em !important;
+  }
+  main .flip-card-back h1 {
+    font-size: 4.3rem !important;
+  }
+  main .tumble-image {
+    margin-left: 50em !important;
+    margin-top: -8.5em !important;
+    width: 460px !important;
+    height: 450px !important;
+  }
+  main .tumble-back {
+    margin-left: -66.3em !important;
+    margin-top: -8.5em !important;
+    width: 460px !important;
+    height: 575px !important;
+    background-color: #e6e6e6;
+  }
+  main .colour-image {
+    margin-left: 4em !important;
+    margin-top: -13em !important;
+    width: 500px !important;
+    height: 324px !important;
+  }
+  main .colour-back {
+    margin-top: -13em !important;
+    margin-left: -22.8em !important;
+    width: 500px !important;
+    height: 700px !important;
+  }
+  main .stillok-image {
+    margin-top: -15em !important;
+    margin-left: 50em !important;
+    width: 520px !important;
+    height: 363px !important;
+  }
+  main .stillok-back {
+    margin-top: -15em !important;
+    margin-left: -70em !important;
+    width: 520px !important;
+    height: 566px !important;
+  }
+  main .manyways-image {
+    margin-top: -8em !important;
+    margin-left: 13em !important;
+    width: 440px !important;
+    height: 447px !important;
+  }
+  main .manyways-back {
+    margin-top: -8em !important;
+    margin-left: -28em !important;
+    width: 440px !important;
+    height: 616px !important;
+  }
+  main .askpolitely-image {
+    margin-top: -12em !important;
+    margin-left: 47em !important;
+    width: 440px !important;
+    height: 364px !important;
+  }
+  main .askpolitely-back {
+    margin-top: -12em !important;
+    margin-left: -62em !important;
+    width: 440px !important;
+    height: 616px !important;
+  }
+  main .ffm-image {
+    margin-top: -4em !important;
+    margin-left: 0em !important;
+    width: 520px !important;
+    height: 392px !important;
+  }
+  main .ffm-back {
+    margin-top: -4em !important;
+    margin-left: -20em !important;
+    width: 520px !important;
+    height: 720px !important;
+  }
+  main .iwonder-image {
+    margin-top: -12em !important;
+    margin-left: 42.5em !important;
+    width: 550px !important;
+    height: 443px !important;
+  }
+  main .iwonder-back {
+    margin-top: -12em !important;
+    margin-left: -64.5em !important;
+    width: 550px !important;
+    height: 366px !important;
+  }
+  main .lewisbook-image {
+    margin-top: 5em !important;
+    margin-left: 14em !important;
+    width: 310px !important;
+    height: 240px !important;
+  }
+  main .lewisbook-back {
+    margin-top: 5em !important;
+    margin-left: -20em !important;
+    width: 310px !important;
+    height: 400px !important;
+  }
+  main .ilikeuniform-image {
+    margin-top: -26em !important;
+    margin-left: 51em !important;
+    width: 450px !important;
+    height: 532px !important;
+  }
+  main .ilikeuniform-back {
+    margin-top: -26em !important;
+    margin-left: -66.7em !important;
+    width: 450px !important;
+    height: 630px !important;
+  }
+  main .helter-image {
+    margin-top: -3em !important;
+    margin-left: 5em !important;
+    width: 580px !important;
+    height: 448px !important;
+  }
+  main .helter-back {
+    margin-top: -3em !important;
+    margin-left: -28.8em !important;
+    width: 580px !important;
+    height: 773px !important;
+  }
+}
+
+@media screen and (min-width: 1498px) {
+  .section-text h1 {
+    font-size: 4.5em !important;
+    line-height: 1.1em !important;
+  }
+  main {
+    margin-bottom: 55em !important;
+  }
+  main .tumble-image {
+    margin-left: 58em !important;
+    margin-top: -8.5em !important;
+    width: 520px !important;
+    height: 450px !important;
+  }
+  main .tumble-back {
+    margin-left: -78em !important;
+    margin-top: -8.5em !important;
+    width: 520px !important;
+    height: 650px !important;
+    background-color: #e6e6e6;
+  }
+  main .colour-image {
+    margin-left: 4em !important;
+    margin-top: -13em !important;
+    width: 570px !important;
+    height: 324px !important;
+  }
+  main .colour-back {
+    margin-top: -13em !important;
+    margin-left: -27.1em !important;
+    width: 570px !important;
+    height: 700px !important;
+  }
+  main .stillok-image {
+    margin-top: -10em !important;
+    margin-left: 58em !important;
+    width: 570px !important;
+    height: 363px !important;
+  }
+  main .stillok-back {
+    margin-top: -10em !important;
+    margin-left: -81.2em !important;
+    width: 570px !important;
+    height: 621px !important;
+  }
+  main .manyways-image {
+    margin-top: 0em !important;
+    margin-left: 15em !important;
+    width: 500px !important;
+    height: 447px !important;
+  }
+  main .manyways-back {
+    margin-top: 0em !important;
+    margin-left: -33.7em !important;
+    width: 500px !important;
+    height: 700px !important;
+  }
+  main .askpolitely-image {
+    margin-top: -2em !important;
+    margin-left: 55em !important;
+    width: 500px !important;
+    height: 364px !important;
+  }
+  main .askpolitely-back {
+    margin-top: -2em !important;
+    margin-left: -73.8em !important;
+    width: 500px !important;
+    height: 700px !important;
+  }
+  main .ffm-image {
+    margin-top: 12em !important;
+    margin-left: 0em !important;
+    width: 520px !important;
+    height: 392px !important;
+  }
+  main .ffm-back {
+    margin-top: 12em !important;
+    margin-left: -20em !important;
+    width: 520px !important;
+    height: 720px !important;
+  }
+  main .iwonder-image {
+    margin-top: 5em !important;
+    margin-left: 47.5em !important;
+    width: 660px !important;
+    height: 443px !important;
+  }
+  main .iwonder-back {
+    margin-top: 5em !important;
+    margin-left: -76.5em !important;
+    width: 660px !important;
+    height: 440px !important;
+  }
+  main .lewisbook-image {
+    margin-top: 31em !important;
+    margin-left: 17em !important;
+    width: 340px !important;
+    height: 240px !important;
+  }
+  main .lewisbook-back {
+    margin-top: 31em !important;
+    margin-left: -26em !important;
+    width: 340px !important;
+    height: 453.3px !important;
+  }
+  main .ilikeuniform-image {
+    margin-top: -2em !important;
+    margin-left: 56em !important;
+    width: 510px !important;
+    height: 532px !important;
+  }
+  main .ilikeuniform-back {
+    margin-top: -2em !important;
+    margin-left: -75.4em !important;
+    width: 510px !important;
+    height: 714px !important;
+  }
+  main .helter-image {
+    margin-top: 28em !important;
+    margin-left: 5em !important;
+    width: 500px !important;
+    height: 448px !important;
+  }
+  main .helter-back {
+    margin-top: 28em !important;
+    margin-left: -23.8em !important;
+    width: 500px !important;
+    height: 666px !important;
   }
 }
 /*# sourceMappingURL=styles.css.map */
