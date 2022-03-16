@@ -13,6 +13,8 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: "avantgarde", "poppins", sans-serif;
+  max-width: 1498px;
+  margin: 0 auto;
 }
 
 nav {
@@ -33,6 +35,7 @@ nav {
     display: flex;
     flex-direction: row;
     align-items: baseline;
+    margin-top: 0.2em;
 
     .icon-nav {
       width: 30px;
@@ -56,7 +59,7 @@ nav {
   .line2,
   .line3 {
     width: 40px;
-    height: 0.15rem;
+    height: 0.12rem;
     background: black;
     margin: 12px;
   }
@@ -153,6 +156,7 @@ nav {
       color: #fff;
       text-decoration: none;
       margin-bottom: 2em;
+      font-size: 1rem;
     }
   }
 }
@@ -782,6 +786,8 @@ main {
 
 .helter-container {
   display: flex;
+  float: left;
+  padding-left: 2em;
   flex-direction: row;
   flex-wrap: wrap;
   width: 88%;
@@ -987,9 +993,9 @@ main {
 
 .imprint-container {
   width: 80%;
-  margin: 0 auto;
-  float: left;
-  margin-left: 3em;
+  /*  margin: 0 auto; */
+  float: left !important;
+  margin-left: 2.2em !important;
   margin-bottom: 10em;
 }
 
@@ -998,8 +1004,8 @@ main {
 .policy-container {
   width: 80%;
   margin: 0 auto;
-  float: left;
-  margin-left: 3em;
+  float: left !important;
+  margin-left: 2.2em !important;
   margin-bottom: 10em;
 
   h1 {
@@ -1257,12 +1263,15 @@ main {
     }
 
     .nav-footer-links {
+      position: absolute;
+      bottom: 5%;
+      right: 5%;
       display: flex;
       flex-direction: row;
       align-items: baseline;
       justify-content: flex-end;
-      margin-right: 6em;
-      margin-top: 4em;
+      /* margin-right: 6em;
+      margin-top: 15em; */
     }
   }
 
@@ -1423,8 +1432,10 @@ main {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    float: left;
+    margin-left: 2em;
     width: 94%;
-    margin: 0 auto;
+    /*  margin: 0 auto; */
     align-items: baseline;
 
     .ffm-image-container {
@@ -1452,7 +1463,8 @@ main {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 94%;
+    width: 97%;
+    height: auto;
     margin: 0 auto;
     align-items: baseline;
 
@@ -1475,7 +1487,7 @@ main {
     display: flex;
     flex-direction: row;
     float: left;
-    margin-left: 3em;
+    margin-left: 1.7em;
     width: 92%;
 
     .ok-image-container {
@@ -1513,8 +1525,8 @@ main {
     display: flex;
     flex-direction: row;
 
-    margin-left: 3em;
-    margin-right: 3em;
+    float: left;
+    margin-left: 2em;
     width: 96%;
 
     .tumble-image-container {
@@ -1793,6 +1805,16 @@ main {
     margin-top: -50.5em;
   }
 
+  .size-info-ffm {
+    margin-top: -26.5em;
+    margin-left: 2.5em;
+  }
+
+  .size-info-madame {
+    margin-top: -26.5em;
+    margin-left: 2.5em;
+  }
+
   .section-text {
     /* width: 80%;
     margin: auto 0s; */
@@ -1829,15 +1851,15 @@ main {
     .colour-image {
       margin-left: 4em !important;
       margin-top: -13em !important;
-      width: 500px !important;
+      width: 460px !important;
       height: 324px !important;
     }
 
     .colour-back {
       margin-top: -13em !important;
-      margin-left: -22.8em !important;
-      width: 500px !important;
-      height: 700px !important;
+      margin-left: -20.25em !important;
+      width: 460px !important;
+      height: 644px !important;
     }
 
     .stillok-image {
@@ -1885,15 +1907,15 @@ main {
     .ffm-image {
       margin-top: -4em !important;
       margin-left: 0em !important;
-      width: 520px !important;
+      width: 500px !important;
       height: 392px !important;
     }
 
     .ffm-back {
       margin-top: -4em !important;
-      margin-left: -20em !important;
-      width: 520px !important;
-      height: 720px !important;
+      margin-left: -18.75em !important;
+      width: 500px !important;
+      height: 692px !important;
     }
 
     .iwonder-image {
@@ -1982,15 +2004,15 @@ main {
     .colour-image {
       margin-left: 4em !important;
       margin-top: -13em !important;
-      width: 570px !important;
+      width: 510px !important;
       height: 324px !important;
     }
 
     .colour-back {
       margin-top: -13em !important;
-      margin-left: -27.1em !important;
-      width: 570px !important;
-      height: 700px !important;
+      margin-left: -23.4em !important;
+      width: 510px !important;
+      height: 714px !important;
     }
 
     .stillok-image {
@@ -2104,5 +2126,15 @@ main {
       width: 500px !important;
       height: 666px !important;
     }
+  }
+
+  .size-info-madame {
+    margin-top: -56.5em;
+    margin-left: 2.5em;
+  }
+
+  .size-info-tumble {
+    margin-top: -56.5em;
+    margin-left: 2.5em;
   }
 }
