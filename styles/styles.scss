@@ -417,6 +417,8 @@ footer {
 
   .about-image {
     width: 50%;
+    float: left !important;
+    margin-left: -0.8em;
     margin-top: 1em;
     margin-bottom: 3em;
     float: left;
@@ -454,8 +456,10 @@ footer {
 
 /* ********************* ***************  index main card flip  ************** ********************************* */
 
-main {
-  margin-bottom: 1em;
+.index-main {
+  /* overflow: hidden !important; */
+  /* height: 3200px !important; */
+  /* width: 1600px !important; */
   /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
   .flip-card {
     background-color: transparent;
@@ -469,23 +473,24 @@ main {
       position: relative;
       width: 200px;
       height: 400px;
+      color: #2320de;
       /* text-align: center; */
       transition: transform 0.01s;
       transform-style: preserve-3d;
 
-      .tumble-image {
+      .cops-image {
         margin-left: 11.5em;
         margin-top: -2.5em;
         width: 160px;
         height: 350px;
       }
 
-      .tumble-back {
+      .cops-back {
         margin-left: -9em;
         margin-top: -2.5em;
         width: 160px;
         height: 199px;
-        background-color: #90a9af;
+        background-color: #af8c78;
       }
 
       .colour-image {
@@ -607,6 +612,21 @@ main {
         width: 160px;
         height: 213.3px;
         background-color: #48000b;
+      }
+
+      .tumble-image {
+        margin-left: 13.5em;
+        margin-top: -94.5em;
+        width: 160px;
+        height: 350px;
+      }
+
+      .tumble-back {
+        margin-left: -11em;
+        margin-top: -94.5em;
+        width: 160px;
+        height: 199px;
+        background-color: #90a9af;
       }
     }
   }
@@ -926,7 +946,7 @@ main {
 
   width: 92%;
   margin: 0 auto;
-  margin-left: 3em;
+  margin-left: 1.9em;
   align-items: baseline;
 
   & > div {
@@ -947,7 +967,8 @@ main {
 
 .size-info-tumble {
   float: left;
-  margin-left: 3.3em;
+  width: 85%;
+  margin-left: 2.2em;
   margin-top: -1.8em;
   font-weight: 300;
 
@@ -956,6 +977,61 @@ main {
     font-weight: 300;
     margin-bottom: 5rem;
   }
+}
+
+/* the cops  */
+
+.cops-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  float: left;
+
+  width: 92%;
+  margin: 0 auto;
+  margin-left: 1.8em;
+  align-items: baseline;
+
+  & > div {
+    margin: 5.2px;
+    margin-bottom: 2em;
+  }
+
+  .cops-image-container {
+    width: 27%;
+    margin-bottom: 1em;
+  }
+
+  h1 {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+}
+
+.size-info-cops {
+  float: left;
+  margin-left: 2.2em;
+  margin-top: -1.8em;
+  font-weight: 300;
+
+  h1 {
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 5rem;
+  }
+}
+
+/* iwonder */
+
+.iwonder-container {
+  display: flex;
+  float: left;
+  padding-left: 0.4em;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 88%;
+  margin: 0 auto;
+  align-items: baseline;
 }
 
 /* ************* exhibitions ******************** */
@@ -1071,14 +1147,14 @@ main {
     }
   }
 
-  .tumble-image {
+  .cops-image {
     margin-left: 28.5em !important;
     margin-top: -5.5em !important;
     width: 260px !important;
     height: 450px !important;
   }
 
-  .tumble-back {
+  .cops-back {
     margin-left: -32.2em !important;
     margin-top: -5.5em !important;
     width: 260px !important;
@@ -1210,6 +1286,25 @@ main {
     margin-left: -11.75em !important;
     width: 340px !important;
     height: 453px !important;
+  }
+
+  .tumble-image {
+    margin-left: 28.5em !important;
+    margin-top: -94.5em !important;
+    width: 260px !important;
+    height: 450px !important;
+  }
+
+  .tumble-back {
+    margin-left: -32.2em !important;
+    margin-top: -94.5em !important;
+    width: 260px !important;
+    height: 324px !important;
+    background-color: #e6e6e6;
+  }
+
+  footer {
+    margin-top: 15em;
   }
 }
 
@@ -1541,6 +1636,26 @@ main {
     font-weight: 300;
   }
 
+  .cops-container {
+    display: flex;
+    flex-direction: row;
+
+    float: left;
+    margin-left: 2em;
+    width: 96%;
+
+    .cops-image-container {
+      max-width: 13%;
+    }
+  }
+
+  .size-info-tumble {
+    float: left;
+    margin-left: 3.3em;
+    margin-top: em;
+    font-weight: 300;
+  }
+
   /* ask politely */
 
   .askpolitely-container {
@@ -1629,6 +1744,7 @@ main {
     position: relative;
     left: 30%;
     width: 50%;
+    text-transform: lowercase;
   }
 
   /* h1 in back flip cards */
@@ -1654,14 +1770,14 @@ main {
     }
   }
 
-  .tumble-image {
+  .cops-image {
     margin-left: 38.5em !important;
     margin-top: -5.5em !important;
     width: 360px !important;
     height: 450px !important;
   }
 
-  .tumble-back {
+  .cops-back {
     margin-left: -48.5em !important;
     margin-top: -5.5em !important;
     width: 360px !important;
@@ -1794,6 +1910,25 @@ main {
     width: 450px !important;
     height: 600px !important;
   }
+
+  .tumble-image {
+    margin-left: 38.5em !important;
+    margin-top: -45.5em !important;
+    width: 360px !important;
+    height: 450px !important;
+  }
+
+  .tumble-back {
+    margin-left: -48.5em !important;
+    margin-top: -45.5em !important;
+    width: 360px !important;
+    height: 450px !important;
+    background-color: #e6e6e6;
+  }
+
+  footer {
+    margin-top: 80em;
+  }
 }
 
 @media screen and (min-width: 1324px) {
@@ -1825,22 +1960,22 @@ main {
   }
 
   main {
-    margin-bottom: 25em !important;
-
+    /* height: 2800px !important;
+    margin-bottom: 140em !important; */
     .flip-card-back {
       h1 {
         font-size: 4.3rem !important;
       }
     }
 
-    .tumble-image {
+    .cops-image {
       margin-left: 50em !important;
       margin-top: -8.5em !important;
       width: 460px !important;
       height: 450px !important;
     }
 
-    .tumble-back {
+    .cops-back {
       margin-left: -66.3em !important;
       margin-top: -8.5em !important;
       width: 460px !important;
@@ -1973,6 +2108,30 @@ main {
       width: 580px !important;
       height: 773px !important;
     }
+
+    .tumble-image {
+      margin-left: 50em !important;
+      margin-top: 8.5em !important;
+      width: 460px !important;
+      height: 450px !important;
+    }
+
+    .tumble-back {
+      margin-left: -66.3em !important;
+      margin-top: 8.5em !important;
+      width: 460px !important;
+      height: 575px !important;
+      background-color: #e6e6e6;
+    }
+  }
+
+  .size-info-cops {
+    margin-top: -2em;
+    margin-left: 2.5em;
+  }
+
+  footer {
+    margin-bottom: 0em !important;
   }
 }
 
@@ -1984,16 +2143,15 @@ main {
     }
   }
 
-  main {
-    margin-bottom: 55em !important;
-    .tumble-image {
+  .index-main {
+    .cops-image {
       margin-left: 58em !important;
       margin-top: -8.5em !important;
       width: 520px !important;
       height: 450px !important;
     }
 
-    .tumble-back {
+    .cops-back {
       margin-left: -78em !important;
       margin-top: -8.5em !important;
       width: 520px !important;
@@ -2126,6 +2284,21 @@ main {
       width: 500px !important;
       height: 666px !important;
     }
+
+    .tumble-image {
+      margin-left: 58em !important;
+      margin-top: 28.5em !important;
+      width: 520px !important;
+      height: 450px !important;
+    }
+
+    .tumble-back {
+      margin-left: -78em !important;
+      margin-top: 28.5em !important;
+      width: 520px !important;
+      height: 650px !important;
+      background-color: #e6e6e6;
+    }
   }
 
   .size-info-madame {
@@ -2136,5 +2309,14 @@ main {
   .size-info-tumble {
     margin-top: -56.5em;
     margin-left: 2.5em;
+  }
+
+  .size-info-cops {
+    margin-top: -2em;
+    margin-left: 2.5em;
+  }
+
+  footer {
+    margin-top: 70em;
   }
 }
