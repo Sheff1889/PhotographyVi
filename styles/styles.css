@@ -480,6 +480,11 @@ footer button {
   font-weight: 300;
 }
 
+.name-subject a {
+  color: black;
+  text-decoration: none;
+}
+
 .name-subject .name-header {
   font-family: "poppins", sans-serif;
   font-size: 1.1rem;
@@ -1174,12 +1179,6 @@ footer button {
   display: flex;
   float: left;
   padding-left: 0.4em;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   width: 88%;
   margin: 0 auto;
   -webkit-box-align: baseline;
@@ -1654,18 +1653,20 @@ footer button {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    width: 60%;
-    margin: 0 auto;
+    float: left;
+    margin-left: 2em;
+    width: 94%;
+    /*  margin: 0 auto; */
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
-  }
-  .manyways-container > div {
-    margin: 4px;
-    margin-bottom: 2em;
+    /* & > div {
+      margin: 4px;
+      margin-bottom: 2em;
+    } */
   }
   .manyways-container .manyways-image-container {
-    max-width: 47%;
+    max-width: 24%;
     margin-bottom: 1em;
   }
   .manyways-container .manyways-image-container h1 {
@@ -1894,6 +1895,9 @@ footer button {
   .contact-wrap .contact-container {
     margin: 0 auto;
   }
+  .contact-wrap a {
+    color: black;
+  }
   /* imprint */
   .imprint-wrap {
     float: left;
@@ -1911,6 +1915,7 @@ footer button {
   .imprint-wrap a {
     cursor: pointer !important;
     font-size: 1rem;
+    color: black;
   }
   /* **********private policy **************** */
   .policy-container {
@@ -2102,6 +2107,9 @@ footer button {
   }
   main .flip-card-back h1 {
     font-size: 4.3rem !important;
+  }
+  main .colour-back h1 {
+    font-size: 4rem !important;
   }
   main .cops-image {
     margin-left: 50em !important;
