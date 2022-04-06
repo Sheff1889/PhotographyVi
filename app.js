@@ -17,3 +17,20 @@ const navSlide = () => {
 navSlide();
 
 
+
+
+/* var elms = document.getElementsByClassName("line");
+var n = elms.length;
+function changeColor(color) {
+    for(var i = 0; i < n; i ++) {
+        elms[i].style.backgroundColor = color;
+    }
+}
+for(var i = 0; i < n; i ++) {
+    elms[i].onmouseover = function() {
+        changeColor("#540103");
+    };
+    elms[i].onmouseout = function() {
+        changeColor("white");
+    };
+} */

@@ -36,6 +36,7 @@ nav {
     flex-direction: row;
     align-items: baseline;
     margin-top: 0.2em;
+    z-index: 1;
 
     .icon-nav {
       width: 30px;
@@ -48,12 +49,21 @@ nav {
     }
   }
 
-  .hamburger {
+  .hamburger{
     display: block;
     cursor: pointer;
     margin-left: 0.6em;
     z-index: 2;
+    color: #2320de;
+    /* pointer-events: none; */
+    
+    
   }
+  .hamburger_hover:hover{
+    color: black;
+  }
+
+  
 
   .line1,
   .line2,
@@ -62,9 +72,12 @@ nav {
     height: 0.12rem;
     background: black;
     margin: 12px;
+
+    
   }
 
   /* hamburger lines aniamtion */
+  
 
   .toggle .line1 {
     transform: rotate(-45deg) translate(-45px, -45px);
@@ -74,12 +87,17 @@ nav {
   .toggle .line2 {
     opacity: 0;
     position: fixed;
+    transform: rotate(0deg) translate(-60px, -14px);
+    padding: 15px;
+    width: 10px;
   }
   .toggle .line3 {
     transform: rotate(45deg) translate(-45px, 45px);
     background-color: #fff;
     position: fixed;
   }
+
+  
 
   .nav-links {
     position: absolute;
@@ -101,6 +119,12 @@ nav {
       color: #fff;
       font-weight: 300;
       font-family: "Poppins", sans-serif;
+
+      a{
+        text-decoration: none;
+        color: white;
+        color:inherit;
+      }
     }
 
     .nav-links li a:hover {
@@ -898,6 +922,13 @@ a{
   margin-left: 2.1em;
   margin-top: -1.8em;
   font-weight: 300;
+  
+
+  h1{
+    font-weight: 300;
+    font-size: 1rem;
+    margin-bottom: 8rem;
+  }
 }
 
 /* madame */
@@ -1041,6 +1072,99 @@ a{
 
 /* ************* exhibitions ******************** */
 
+.exhibition-container{
+  .exhi-flex{
+    .exhi-one{
+      position: absolute;
+    }
+  }
+}
+
+
+
+  .exhi-one{
+    margin-top: 25em;
+    float: left;
+    margin-left: 1.8em;
+
+    h1{
+      font-size: 1rem;
+    }
+  }
+
+
+.slidershow{
+  position: relative;
+ 
+  width: 85%;
+  max-width: 450px;
+  height: 370px;
+  overflow: hidden;
+  margin: auto 0;
+}
+
+ .middle{
+  position: absolute;
+  float: left;
+  top: 350px;
+  
+  transform: translate(8%, -50%);
+} 
+
+.navigation{
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.bar{
+  width: 50px;
+  height: 10px;
+  border: 2px solid #fff;
+  margin: 6px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.bar:hover{
+  background-color: #fff;
+}
+
+input[name="r"]{
+  position: absolute;
+  visibility: hidden;
+}
+
+.slides{
+  width: 500%;
+  height: 100%;
+  display: flex;
+}
+
+.slide{
+  width: 20%;
+  transition: 0.6s;
+}
+
+.slide {
+  .image-slider{
+    width: 100%;
+    height: 100%;
+  }
+}
+
+#r1:checked ~ .s1{
+  margin-left: 0;
+}
+#r2:checked ~ .s1{
+  margin-left: -20%;
+}
+#r3:checked ~ .s1{
+  margin-left: -40%;
+}
+
 /* *****************publications***************** */
 
 .publications-container {
@@ -1118,6 +1242,7 @@ a{
 
   a {
     cursor: pointer;
+    color: black;
   }
 }
 
@@ -1137,6 +1262,7 @@ a{
 
   a {
     cursor: pointer;
+    color: black;
   }
 }
 
@@ -1464,8 +1590,8 @@ a{
     float: left;
 
     .about-image {
-      width: 250px;
-      height: 350px;
+      width: 300px;
+      height: 300px;
 
       margin-right: 15em;
     }
@@ -1473,7 +1599,6 @@ a{
     .about-text-container {
       width: 45%;
       margin-right: 10em;
-      /*  margin-left: 10em; */
     }
   }
 
@@ -1519,12 +1644,14 @@ a{
 
   .size-info-manyways {
     float: left;
-    margin-left: 3.3em;
+    margin-left: 2.3em;
     margin-top: -1.8em;
     font-weight: 300;
+    
 
     h1 {
-      margin-left: 10em;
+      font-weight: 300;
+    font-size: 1rem;
     }
   }
 
@@ -1714,7 +1841,7 @@ a{
   .contact-wrap {
     float: left;
     position: relative;
-    left: 46%;
+    left: 38.5%;
     width: 30%;
     margin-bottom: 20em !important;
 
@@ -1722,8 +1849,10 @@ a{
       margin: 0 auto;
     }
 
-    a{
+    a:link{
       color: black;
+color:inherit;
+
     }
   }
 
@@ -1754,9 +1883,10 @@ a{
   .policy-container {
     float: left;
     position: relative;
-    left: 30%;
+    left: 36.5%;
     width: 50%;
     text-transform: lowercase;
+    font-size: 1rem;
   }
 
   /* h1 in back flip cards */
@@ -1945,20 +2075,21 @@ a{
 
 @media screen and (min-width: 1324px) {
   .size-info-tumble {
-    margin-top: -26.5em;
+    margin-top: -1.8em;
+    margin-left: 2.5em;
   }
 
   .size-info-manyways {
-    margin-top: -50.5em;
+    margin-top: -1.8em;
   }
 
   .size-info-ffm {
-    margin-top: -26.5em;
+    margin-top: -1.8em;
     margin-left: 2.5em;
   }
 
   .size-info-madame {
-    margin-top: -26.5em;
+    margin-top: -1.8em;
     margin-left: 2.5em;
   }
 
@@ -2319,16 +2450,16 @@ a{
     }
   }
 
-  .size-info-madame {
-    margin-top: -56.5em;
+  /* .size-info-madame {
+    margin-top: -1.5em;
     margin-left: 2.5em;
-  }
+  } */
 
-  .size-info-tumble {
-    margin-top: -56.5em;
-    margin-left: 2.5em;
+  /*  .size-info-tumble {
+    margin-top: 5em;
+    margin-left: 12.5em;
   }
-
+  */
   .size-info-cops {
     margin-top: -2em;
     margin-left: 2.5em;
